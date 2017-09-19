@@ -25,6 +25,8 @@ class App extends Component {
             <p className="lab-title">Schwarts Lab</p>
           </div>
           <div className="row">
+            <img className="" src={assetHelper["purple.jpg"]}></img>
+            <img className="" src={assetHelper["spiral.jpg"]}></img>
             <p className="text-center">Place holder for scrolling images</p>
           </div>
           <div className="row labels-header">
