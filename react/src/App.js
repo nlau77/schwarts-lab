@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import Research from './containers/Research'
+import Layout from './containers/Layout'
 
 class App extends Component {
   constructor(props){
@@ -25,8 +26,7 @@ class App extends Component {
             <p className="lab-title">Schwarts Lab</p>
           </div>
           <div className="row">
-            <img className="" src={assetHelper["purple.jpg"]}></img>
-            <img className="" src={assetHelper["spiral.jpg"]}></img>
+            <img className="pictureSlide" src={assetHelper["purple.jpg"]}></img>
             <p className="text-center">Place holder for scrolling images</p>
           </div>
           <div className="row labels-header">
@@ -36,8 +36,9 @@ class App extends Component {
             <p className="columns small-3 text-center">Context</p>
           </div>
         </div>
+
         <div>
-          {labelDisplay}
+          <Research />
         </div>
       </div>
     )
