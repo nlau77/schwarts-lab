@@ -25,3 +25,20 @@
     background: green;
   }
 }
+
+// .linksHeader {
+//   margin-left: 15%
+// }
+.labLinks {
+  // margin-left: 150px;
+  // padding-left: 75px;
+  // padding-right: 75px;
+  font-size: 2.5vw;
+  text-align: center;
+  color: red;
+  &:hover {
+    color: green;
+  }
+  // border-left: solid 1px black;
+  // border-right: solid 1px black
+}
