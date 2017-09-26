@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+// import { BrowserRouter } from 'react-router-dom';
+
 import Research from './containers/Research'
 import Layout from './containers/Layout'
 
@@ -23,7 +25,7 @@ class App extends Component {
       <div>
         <div className="lab-header">
           <div className="row text-center">
-            <p className="lab-title">Schwarts Lab</p>
+            <p className="lab-title">Schwartz Lab</p>
           </div>
           <div className="row">
             <img className="pictureSlide" src={assetHelper["purple.jpg"]}></img>
@@ -33,7 +35,7 @@ class App extends Component {
             <p className="columns small-3 text-center">Research</p>
             <p className="columns small-3 text-center">Lab History</p>
             <p className="columns small-3 text-center">Methods</p>
-            <p className="columns small-3 text-center">Context</p>
+            <p className="columns small-3 text-center">Contacts</p>
           </div>
         </div>
 
