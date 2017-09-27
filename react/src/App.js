@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-// import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 console.log(Route)
 import Research from './containers/Research'
 import Methods from './containers/Methods'
 import Layout from './containers/Layout'
+import Contacts from './containers/Contacts'
 
 class App extends Component {
   constructor(props){
@@ -44,7 +44,7 @@ class App extends Component {
             <Route exact path="/" component={Research} />
             <Route exact path="/methods" component={Methods} />
             <Route exact path="/history" component={Methods} />
-            <Route exact path="/contact" component={Methods} />
+            <Route exact path="/contacts" component={Contacts} />
           </div>
           </div>
         </Router>

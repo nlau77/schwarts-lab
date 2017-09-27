@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <div className="linksHeader text-center rows">
       <div className="columns small-2 small-offset-2">
-        <Link to='/' className ="labLinks">Home</Link>
+        <Link to='/' className ="labLinks">Research</Link>
       </div>
       <div className="columns small-2">
         <Link to='/methods' className="labLinks">Methods</Link>
@@ -17,6 +17,8 @@ const Layout = (props) => {
         <Link to='/contacts' className="labLinks">Contacts</Link>
       </div>
       <div className="columns small-2">
+      </div>
+      <div className="row">
       </div>
     </div>
   )
