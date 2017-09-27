@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
-// import { BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+console.log(Route)
 import Research from './containers/Research'
+import Methods from './containers/Methods'
 import Layout from './containers/Layout'
+import Contacts from './containers/Contacts'
 
 class App extends Component {
   constructor(props){
@@ -22,6 +23,7 @@ class App extends Component {
     }
 
     return (
+
       <div>
         <div className="lab-header">
           <div className="row text-center">
@@ -31,16 +33,23 @@ class App extends Component {
             <img className="pictureSlide" src={assetHelper["purple.jpg"]}></img>
             <p className="text-center">Place holder for scrolling images</p>
           </div>
-          <div className="row labels-header">
-            <p className="columns small-3 text-center">Research</p>
-            <p className="columns small-3 text-center">Lab History</p>
-            <p className="columns small-3 text-center">Methods</p>
-            <p className="columns small-3 text-center">Contacts</p>
-          </div>
-        </div>
 
+        </div>
+        <Router>
+          <div>
+          <div>
+            <Layout />
+          </div>
+          <div>
+            <Route exact path="/" component={Research} />
+            <Route exact path="/methods" component={Methods} />
+            <Route exact path="/history" component={Methods} />
+            <Route exact path="/contacts" component={Contacts} />
+          </div>
+          </div>
+        </Router>
         <div>
-          <Research />
+          <p>place holder</p>
         </div>
       </div>
     )
