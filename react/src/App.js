@@ -37,11 +37,15 @@ class App extends Component {
         </div>
         <Router>
           <div>
+          <div>
             <Layout />
+          </div>
+          <div>
             <Route exact path="/" component={Research} />
             <Route exact path="/methods" component={Methods} />
             <Route exact path="/history" component={Methods} />
             <Route exact path="/contact" component={Methods} />
+          </div>
           </div>
         </Router>
         <div>

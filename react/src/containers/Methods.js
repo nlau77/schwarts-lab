@@ -5,12 +5,33 @@ class Methods extends Component {
     super(props)
     this.state ={}
   }
+
+  // this.biologicalAssays
   render(){
     return(
       <div>
-        <p>Biological Assays</p>
-        <p>Code / Programming</p>
-        <p>Philosophy</p>
+        <div className="row">
+        </div>
+        <ul className="method-layer">
+          <li className="method-headers method-headers-top">Biological Assays</li>
+            <ol className="method-document-header">
+              <li className="method-documents">document A</li>
+              <li className="method-documents">document B</li>
+              <li className="method-documents">document C</li>
+            </ol>
+          <li className="method-headers">Programming</li>
+            <ol className="method-document-header">
+              <li className="method-documents">document A</li>
+              <li className="method-documents">document B</li>
+              <li className="method-documents">document C</li>
+            </ol>
+          <li className="method-headers">Philosophy</li>
+            <ol className="method-document-header">
+              <li className="method-documents">document A</li>
+              <li className="method-documents">document B</li>
+              <li className="method-documents">document C</li>
+            </ol>
+        </ul>
       </div>
     )
   }
