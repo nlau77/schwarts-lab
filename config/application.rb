@@ -17,10 +17,10 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 # delete this if heroku push does not work
-config.assets.initialize_on_precompile = false
 
 module SchwartzLab
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
