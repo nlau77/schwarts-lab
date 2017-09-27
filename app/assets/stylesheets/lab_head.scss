@@ -1,11 +1,20 @@
+$dull_gray: #DAD6CA;
+$sky_blue: #1BB0CE;
+$grey_blue: #4F8699;
+$dull_maroon:#6A5E72;
+$maroon_:#563444;
+
+body{
+  background: $dull_gray;
+}
 .lab-header{
   margin-top: 50px;
 }
 
 .lab-title{
-  color:blue;
+  color:$sky_blue;
   // background: grey;
-  text-shadow: 2px 2px #4890FF;
+  text-shadow: 3px 3px $grey_blue;
   margin-left: 100px;
   padding-right: 100px;
   font-size: 5rem;

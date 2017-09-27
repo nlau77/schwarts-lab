@@ -49,7 +49,7 @@ class App extends Component {
           </div>
         </Router>
         <div>
-          <p>Place Holder for bottom</p>
+          <p>place holder</p>
         </div>
       </div>
     )
