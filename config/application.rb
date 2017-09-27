@@ -16,6 +16,9 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# delete this if heroku push does not work
+config.assets.initialize_on_precompile = false
+
 module SchwartzLab
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
