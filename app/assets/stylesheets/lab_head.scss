@@ -1,11 +1,25 @@
+$dull_gray: #DAD6CA;
+$sky_blue: #1BB0CE;
+$grey_blue: #4F8699;
+$dull_maroon:#6A5E72;
+$maroon:#563444;
+$grey_green:#7BB0A8;
+$lime_green:#A7DBAB;
+$yellow_green:#E4F5B1;
+
+
+body{
+  background: lighten($dull_gray, 5%);
+  // background: beige;
+}
 .lab-header{
-  margin-top: 125px;
+  margin-top: 50px;
 }
 
 .lab-title{
-  color:blue;
+  color:$sky_blue;
   // background: grey;
-  text-shadow: 2px 2px #4890FF;
+  text-shadow: 3px 3px $grey_blue;
   margin-left: 100px;
   padding-right: 100px;
   font-size: 5rem;
@@ -24,4 +38,21 @@
   &hover{
     background: green;
   }
+}
+
+.linksHeader {
+  margin-bottom: 10px;
+}
+.labLinks {
+  // margin-left: 150px;
+  // padding-left: 75px;
+  // padding-right: 75px;
+  font-size: 2.5vw;
+  text-align: center;
+  color: red;
+  &:hover {
+    color: green;
+  }
+  // border-left: solid 1px black;
+  // border-right: solid 1px black
 }
