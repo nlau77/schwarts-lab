@@ -9,7 +9,7 @@ class Research extends Component {
     return(
       <div>
         <div className="row top-interest">
-          <div className="small-5 columns">
+          <div className="small-6 columns">
             <h5 className="interest-content1 text-center">Interest 1</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content">
@@ -22,7 +22,7 @@ class Research extends Component {
               </span>
             </span>
           </div>
-          <div className="small-5 columns right-interest">
+          <div className="small-6 columns right-interest">
             <h5 className="interest-content1 text-center">Interest 2</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content"><span className="interest-content2">
@@ -35,7 +35,7 @@ class Research extends Component {
           </div>
         </div>
         <div className="row top-interest">
-          <div className="small-5 columns">
+          <div className="small-6 columns">
             <h5 className="interest-content1 text-center">Interest 3</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content">
@@ -48,7 +48,7 @@ class Research extends Component {
               </span>
             </span>
           </div>
-          <div className="small-5 columns right-interest">
+          <div className="small-6 columns right-interest">
             <h5 className="interest-content1 text-center">Interest 4</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content"><span className="interest-content2">

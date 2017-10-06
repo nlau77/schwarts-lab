@@ -25,16 +25,6 @@ class App extends Component {
     return (
 
       <div>
-        <div className="lab-header">
-          <div className="row text-center">
-            <p className="lab-title">Schwartz Lab</p>
-          </div>
-          <div className="row">
-            <img className="pictureSlide" src={assetHelper["purple.jpg"]}></img>
-            <p className="text-center">Place holder for scrolling images</p>
-          </div>
-
-        </div>
         <Router>
           <div>
           <div>
@@ -48,9 +38,6 @@ class App extends Component {
           </div>
           </div>
         </Router>
-        <div>
-          <p>place holder</p>
-        </div>
       </div>
     )
   }

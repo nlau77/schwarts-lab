@@ -12,7 +12,7 @@ class Contacts extends Component {
     return (
       <div className="contacts-header">
         <div className="row">
-          <h3>PI</h3>
+          <h3 className="contact-title">PI</h3>
           <div className="columns small-4 small-offset-1">
           <img className="" src={assetHelper["cat.jpg"]}></img>
           </div>
@@ -25,11 +25,11 @@ class Contacts extends Component {
             </ul>
           </div>
         </div>
-        <div className="rows">
-          <h3>Members</h3>
+        <div className="row members-header">
+          <h3 className="contact-title">Members</h3>
         </div>
-        <div className="rows">
-          <h3>Past Members</h3>
+        <div className="row past-member-header">
+          <h3 className="contact-title">Past Members</h3>
         </div>
       </div>
     )

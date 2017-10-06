@@ -13,7 +13,13 @@ body{
   // background: beige;
 }
 .lab-header{
-  margin-top: 50px;
+  // margin-top: 50px;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  background-image: url(implosion.gif);
+  background-repeat: repeat;;
+  height: auto;
+  margin-bottom: 25px;
 }
 
 .lab-title{
@@ -30,15 +36,31 @@ body{
   margin-top: 10px;
 }
 
-.labels-header p{
-  // border: 1px solid black;
-  // border-radius: 10px;
-  // padding-left: 10px;
-  // padding-right: 10px;
-  &hover{
-    background: green;
+.linkslayer{
+  &:hover {
+    border-top: 1px solid darken($lime_green, 30%);
+    border-bottom: 1px solid darken($lime_green, 30%);
+    padding: 5px;
+    margin-left: 1px;
+    // color: lighten($lime_green, 50%);
+    background-color: lighten($dull_maroon, 20%);
+    color: darken($grey_green, 40%);
+  }
+  &:active {
+    color: $dull_maroon;
   }
 }
+// .labels-header p{
+//   // border: 1px solid black;
+//   // border-radius: 10px;
+//   // padding-left: 10px;
+//   // padding-right: 10px;
+//   &hover{
+//     background: green;
+//     border-top: 1px solid black;
+//     border-bottom: 1px solid black;
+//   }
+// }
 
 .linksHeader {
   margin-bottom: 10px;
@@ -49,10 +71,21 @@ body{
   // padding-right: 75px;
   font-size: 2.5vw;
   text-align: center;
-  color: red;
-  &:hover {
-    color: green;
-  }
+  color: darken($grey_green, 20%);
+  // &:hover {
+  //   // color: lighten($lime_green, 50%);
+  // }
+
   // border-left: solid 1px black;
   // border-right: solid 1px black
+}
+
+.selectedTab {
+  color: $sky_blue;
+  background: $yellow_green;
+  padding: 5px;
+  border-top: 1px solid darken($lime_green, 30%);
+  border-bottom: 1px solid darken($lime_green, 30%);
+
+
 }
