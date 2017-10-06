@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LinkTabs = (props) => {
   return (
-    <Link to={props.link} className="labLinks">
+    <Link to={props.link} onClick={props.handleClick} className="labLinks">
       <div className={props.className}>
         {props.name}
       </div>
