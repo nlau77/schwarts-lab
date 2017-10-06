@@ -38,9 +38,6 @@ class App extends Component {
           </div>
           </div>
         </Router>
-        <div>
-          <p>place holder</p>
-        </div>
       </div>
     )
   }

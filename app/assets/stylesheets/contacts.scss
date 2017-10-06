@@ -1,8 +1,24 @@
+$dull_gray: #DAD6CA;
+$sky_blue: #1BB0CE;
+$grey_blue: #4F8699;
+$dull_maroon:#6A5E72;
+$maroon:#563444;
+$grey_green:#7BB0A8;
+$lime_green:#A7DBAB;
+$yellow_green:#E4F5B1;
+
+
+
 .contacts-header{
-  margin-top: 50px;
 }
 
 .PI-info {
   font-size: 22px;
   list-style-type:none;
+}
+
+.contact-title{
+  border-bottom: solid 1px $dull_maroon;
+  margin-top: 50px;
+  color: $grey_blue;
 }
