@@ -9,55 +9,36 @@ class Research extends Component {
     return(
       <div>
         <div className="row top-interest">
-          <div className="small-6 columns">
-            <h5 className="interest-content1 text-center">Interest 1</h5>
+          <div className="small-4 columns">
+            <h5 className="interest-content1 text-center">Mechanotransduction</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content">
               <span className="interest-content2">
                 <ul className="topic-lists">
-                  <li>Topic 1</li>
-                  <li>Topic 2</li>
-                  <li>Topic 3</li>
+                  <li>Classifying focal adhesions and their dynamics under varying mechanical strain and substrate stiffness.</li>
                 </ul>
               </span>
             </span>
           </div>
-          <div className="small-6 columns right-interest">
-            <h5 className="interest-content1 text-center">Interest 2</h5>
+          <div className="small-4 columns right-interest">
+            <h5 className="interest-content1 text-center">Endothelial cell flow sensing</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content"><span className="interest-content2">
               <ul className="topic-lists">
-                <li>Topic 1</li>
-                <li>Topic 2</li>
-                <li>Topic 3</li>
+                <li>Understanding the pathways and mechanisms by which endothelial cells sense blood flow.</li>
               </ul>
             </span></span>
           </div>
-        </div>
-        <div className="row top-interest">
-          <div className="small-6 columns">
-            <h5 className="interest-content1 text-center">Interest 3</h5>
+          <div className="small-4 columns">
+            <h5 className="interest-content1 text-center">Vascular disease models</h5>
             <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
             <span className="interest-content">
               <span className="interest-content2">
                 <ul className="topic-lists">
-                  <li>Topic 1</li>
-                  <li>Topic 2</li>
-                  <li>Topic 3</li>
+                  <li>Investigating disturbed vascular homeostasis and its roles in inflammation, atherosclerosis, and matrix remodeling.</li>
                 </ul>
               </span>
             </span>
-          </div>
-          <div className="small-6 columns right-interest">
-            <h5 className="interest-content1 text-center">Interest 4</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
-            <span className="interest-content"><span className="interest-content2">
-              <ul className="topic-lists">
-                <li>Topic 1</li>
-                <li>Topic 2</li>
-                <li>Topic 3</li>
-              </ul>
-            </span></span>
           </div>
         </div>
         <div className="membrane-photo row">
