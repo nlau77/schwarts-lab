@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20171018025553) do
   create_table "interests", force: :cascade do |t|
     t.string "description", null: false
     t.string "link", null: false
-    t.integer "type", null: false
+    t.integer "interest_type", null: false
   end
 
 end
