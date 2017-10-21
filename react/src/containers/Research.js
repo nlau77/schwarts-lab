@@ -4,17 +4,44 @@ class Research extends Component {
   constructor(props){
     super(props)
     this.state ={
-      selectedLink:"research-links"
+      selectedLink:"research-links",
+      interests: {}
     }
     this.handleInterestClick=this.handleInterestClick.bind(this)
+    this.getInterestLinks=this.getInterestLinks.bind(this)
   }
   handleInterestClick(){
+    console.log('you have hit this button')
     if(this.state.selectedLink === "research-links"){
       this.setState({ selectedLink : "research-links-selected" })
     } else {
       this.setState({ selectedLink : "research-links" })
     }
   }
+
+  getInterestLinks(){
+    console.log(this.state.interests, {credentials: 'same-origin'})
+    fetch(`/api/v1/interests`)
+    .then(response =>{
+      if(response.ok){
+        return response;
+      }else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage)
+        throw(error);
+      }
+    })
+    .then((response) => response.json())
+    .then((responseData) => {
+      this.setState({
+        interests: responseData.interests
+      })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+    // console.log(this.state.interests)
+    // debugger;
+  }
+
   render(){
     return(
       <div>
@@ -27,6 +54,7 @@ class Research extends Component {
                 <ul className="topic-lists">
                   <li>Classifying focal adhesions and their dynamics under varying mechanical strain and substrate stiffness.</li>
                   <li onClick={this.handleInterestClick}><u>see more</u></li>
+                  <li onClick={this.getInterestLinks}><u>testing onclick</u></li>
                 </ul>
               </span>
             </span>
