@@ -100,3 +100,7 @@ philosophy = Methodtype.create(method_type: "philosophy")
 
 Labmethod.create(title: "cheese", pdf_url: "animalFacts.pdf", methodtype: biological)
 Labmethod.create(title: "potato", pdf_url: "animalFacts.pdf", methodtype: biological)
+Labmethod.create(title: "program 1", pdf_url: "animalFacts.pdf", methodtype: programming)
+Labmethod.create(title: "program 2", pdf_url: "animalFacts.pdf", methodtype: programming)
+Labmethod.create(title: "philo 1", pdf_url: "animalFacts.pdf", methodtype: philosophy)
+Labmethod.create(title: "philo 2", pdf_url: "animalFacts.pdf", methodtype: philosophy)

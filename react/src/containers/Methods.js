@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Methods extends Component {
   constructor(props){
     super(props)
-    this.state ={}
+    this.state ={
+      selectedMethod: ""
+    }
   }
 
   // this.biologicalAssays

@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Profile = (props) => {
-
   return (
     <div className='small-12 columns profile-section'>
       <img className="profile-picture" src={assetHelper[`profiles/${props.img_url}`]}></img>
