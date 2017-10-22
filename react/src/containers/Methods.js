@@ -12,6 +12,10 @@ class Methods extends Component {
       <div>
         <div className="row">
         </div>
+        <div>
+          <p>testing pdf download</p>
+          <a href="/methods/biological/animalFacts.pdf" download>Animal facts</a>
+        </div>
         <ul className="method-layer">
           <li className="method-headers method-headers-top">Biological Assays</li>
             <ol className="method-document-header">

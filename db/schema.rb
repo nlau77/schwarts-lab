@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022202035) do
+ActiveRecord::Schema.define(version: 20171022220015) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,19 @@ ActiveRecord::Schema.define(version: 20171022202035) do
     t.string "description", null: false
     t.string "link", null: false
     t.integer "interest_type", null: false
+  end
+
+  create_table "labmethods", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "pdf_url", null: false
+    t.bigint "methodtype_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["methodtype_id"], name: "index_labmethods_on_methodtype_id"
+  end
+
+  create_table "methodtypes", force: :cascade do |t|
+    t.string "method_type", null: false
   end
 
   create_table "pastmembers", force: :cascade do |t|
