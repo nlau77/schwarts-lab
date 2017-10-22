@@ -7,7 +7,16 @@ class Api::V1::InterestsController < ApiController
      interests: @interests
    }
  end
+
+ def show
+  # binding.pry
+  id = params[:id].to_i
+   @interests = Interest.where(interest_type: id)
+
+   render json: @interests
+ end
+
  private
- 
+
 
 end
