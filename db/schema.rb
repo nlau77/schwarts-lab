@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20171021172533) do
 
   create_table "profiles", force: :cascade do |t|
     t.string "name", null: false
+    t.string "email"
     t.text "description", null: false
     t.string "img_url", null: false
     t.boolean "past_member"
