@@ -22,3 +22,23 @@ $yellow_green:#E4F5B1;
   margin-top: 50px;
   color: $grey_blue;
 }
+
+.profile-section{
+  // margin-top: 10px;
+  border-bottom: solid 1px $grey_blue;
+  padding: 10px;
+}
+
+.profile-picture{
+  height: 15vw;
+  width: auto;
+  float: left;
+  margin-right: 10px;
+  clear:both;
+}
+
+.profile-info{
+  margin-left: 0px;
+  overflow:auto;
+  display:block;
+}
