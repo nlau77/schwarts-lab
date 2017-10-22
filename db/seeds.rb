@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Interest.destroy_all
+Profile.destroy_all
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
                 link: "https://doi.org/10.1038/nature09198",
@@ -56,3 +57,22 @@ Interest.create(description: "Baeyens, N. et al., Defective fluid shear stress m
 Interest.create(description: "Baeyens, N. et al., Endothelial fluid shear stress sensing in vascular health and disease. J. Clin. Invest., 2016. 126(3): p. 821-828.",
                 link: "https://doi.org/10.1172/JCI83083",
                 interest_type: 3)
+
+
+Profile.create(name: "Tristan Driscoll",
+               email: "tristain@gmail.com",
+               description: "asdfasdfas",
+               img_url: "tristan.jpg")
+
+Profile.create(name: "Tristan",
+               email: "tristain2@gmail.com",
+               description: "test file 2",
+               img_url: "tristan.jpg")
+
+Profile.create(name: "Brian Coon",
+               email: "Bcoon@gmail.com",
+               description: "asdfasdfas",
+               img_url: "brian.jpg")
+
+Pastmember.create(name: "Bob Ross", email: "bobross@gmail.com")
+Pastmember.create(name: "Alton Brown", email: "alton@gmail.com")
