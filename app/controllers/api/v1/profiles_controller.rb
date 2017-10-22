@@ -2,7 +2,12 @@ class Api::V1::ProfilesController < ApiController
 
 def index
   @profiles = Profile.all
-  render json: @profiles
+  @pastmembers = Pastmember.all
+
+  render json: {
+    profiles: @profiles,
+    pastmembers: @pastmembers
+  }
 end
 
 end
