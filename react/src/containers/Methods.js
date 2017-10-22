@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Methods extends Component {
   constructor(props){
     super(props)
-    this.state ={}
+    this.state ={
+      selectedMethod: ""
+    }
   }
 
   // this.biologicalAssays
@@ -11,6 +13,10 @@ class Methods extends Component {
     return(
       <div>
         <div className="row">
+        </div>
+        <div>
+          <p>testing pdf download</p>
+          <a href="/methods/biological/animalFacts.pdf" download>Animal facts</a>
         </div>
         <ul className="method-layer">
           <li className="method-headers method-headers-top">Biological Assays</li>

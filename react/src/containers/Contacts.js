@@ -6,7 +6,8 @@ class Contacts extends Component {
     super(props);
     this.state = {
     profiles: [],
-    pastMembers: []
+    pastMembers: [],
+    cheese: "fondue"
     }
   }
 

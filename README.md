@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Overview
 
-Things you may want to cover:
+Scwartz Lab is a informational website created for Lab PI Martin Scwartz, who is a professor of Biomedical Engineering and Cell Biology.
 
-* Ruby version
 
-* System dependencies
+##Technologies
+The website built with a React frontend with a Rails Api backend.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The website is still under construction and it can be viewed at https://bio-lab.herokuapp.com/
+  *Note, currently the cell imploding gif is not able to display properly on the heroku website. 

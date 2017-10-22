@@ -9,6 +9,8 @@
 Interest.destroy_all
 Profile.destroy_all
 Pastmember.destroy_all
+Labmethod.destroy_all
+Methodtype.destroy_all
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
                 link: "https://doi.org/10.1038/nature09198",
@@ -90,3 +92,15 @@ Profile.create(name: "Tristan",
 
 Pastmember.create(name: "Bob Ross", email: "bobross@gmail.com")
 Pastmember.create(name: "Alton Brown", email: "alton@gmail.com")
+
+
+biological = Methodtype.create(method_type: "biological")
+programming = Methodtype.create(method_type: "programming")
+philosophy = Methodtype.create(method_type: "philosophy")
+
+Labmethod.create(title: "cheese", pdf_url: "animalFacts.pdf", methodtype: biological)
+Labmethod.create(title: "potato", pdf_url: "animalFacts.pdf", methodtype: biological)
+Labmethod.create(title: "program 1", pdf_url: "animalFacts.pdf", methodtype: programming)
+Labmethod.create(title: "program 2", pdf_url: "animalFacts.pdf", methodtype: programming)
+Labmethod.create(title: "philo 1", pdf_url: "animalFacts.pdf", methodtype: philosophy)
+Labmethod.create(title: "philo 2", pdf_url: "animalFacts.pdf", methodtype: philosophy)

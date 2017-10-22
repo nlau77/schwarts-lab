@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :interests, only: [:index, :show]
       resources :profiles, only: [:index]
-      resources :pastmembers, only: [:index]
+      resources :labmethods, only: [:index, :show]
     end
   end
 
