@@ -27,6 +27,7 @@ class Contacts extends Component {
         </div>
         <div className="row members-header">
           <h3 className="contact-title">Members</h3>
+          <img className="" src={assetHelper["profiles/tristan.jpg"]}></img>
         </div>
         <div className="row past-member-header">
           <h3 className="contact-title">Past Members</h3>

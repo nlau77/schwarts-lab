@@ -9,7 +9,6 @@ class Api::V1::InterestsController < ApiController
  end
 
  def show
-  # binding.pry
   id = params[:id].to_i
    @interests = Interest.where(interest_type: id)
 
