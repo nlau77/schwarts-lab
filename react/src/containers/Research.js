@@ -12,7 +12,6 @@ class Research extends Component {
   }
 
   getInterestLinks(id, topic){
-    // console.log(this.state.interests)
     fetch(`/api/v1/interests/${id}`)
     .then(response =>{
       if(response.ok){
@@ -31,14 +30,11 @@ class Research extends Component {
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-    // console.log(this.state.interests)
-    // debugger;
-
   }
 
   render(){
     let interestsLinks = this.state.interests.map(interest =>{
-      // debugger;
+
       return (
         <a href={interest.link}><li>{interest.description}</li></a>
       )
