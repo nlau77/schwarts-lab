@@ -12,7 +12,6 @@ class Methods extends Component {
   }
 
   fetchMethodsPDF(method_type){
-    console.log("button was clicked")
     fetch(`/api/v1/labmethods/${method_type}`)
     .then(response =>{
       if(response.ok){
@@ -31,8 +30,6 @@ class Methods extends Component {
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-    console.log(this.state.selectedMethod)
-    console.log(this.state.methodPdfs)
     }
 
 
@@ -52,16 +49,17 @@ class Methods extends Component {
       <div>
         <div className="row">
         </div>
-        <div>
-          <p>testing pdf download</p>
-          <a href="/methods/biological/animalFacts.pdf" download>Animal facts</a>
+        <div className="row">
+          <div className="small-6 columns">
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"biological")} className="method-headers method-headers-top">Biological Assays</h2>
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"programming")} className="method-headers">Programming</h2>
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"philosophy")} className="method-headers">Philosophy</h2>
+          </div>
+          <div className="small-6 columns">
+            <h3>{this.state.selectedMethod}</h3>
+            <ol>{pdf_list}</ol>
+          </div>
         </div>
-        <ul className="method-layer">
-          <li onClick={this.fetchMethodsPDF.bind(this,"biological")} className="method-headers method-headers-top">Biological Assays</li>
-          <li className="method-headers">Programming</li>
-          <li className="method-headers">Philosophy</li>
-        </ul>
-        {pdf_list}
       </div>
     )
   }

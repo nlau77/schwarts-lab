@@ -6,7 +6,7 @@ const PdfLinks = (props) => {
 
   // debugger;
   let methodLink = "/methods/" + props.selectedMethod + "/" + props.pdf_url
-  debugger
+
   return (
     <li>
       <a href={methodLink} download>{props.title}</a>
