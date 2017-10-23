@@ -55,7 +55,7 @@ class Methods extends Component {
             <h2 onClick={this.fetchMethodsPDF.bind(this,"programming")} className="method-headers">Programming</h2>
             <h2 onClick={this.fetchMethodsPDF.bind(this,"philosophy")} className="method-headers">Philosophy</h2>
           </div>
-          <div className="small-6 columns">
+          <div className="small-6 columns method-links-layer">
             <h3>{this.state.selectedMethod}</h3>
             <ol>{pdf_list}</ol>
           </div>
