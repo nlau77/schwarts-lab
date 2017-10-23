@@ -1,43 +1,65 @@
 import React, { Component } from 'react';
+import PdfLinks from '../components/PdfLinks'
 
 class Methods extends Component {
   constructor(props){
     super(props)
     this.state ={
-      selectedMethod: ""
+      selectedMethod: "",
+      methodPdfs:[]
     }
+    this.fetchMethodsPDF = this.fetchMethodsPDF.bind(this)
   }
 
-  // this.biologicalAssays
+  fetchMethodsPDF(method_type){
+    fetch(`/api/v1/labmethods/${method_type}`)
+    .then(response =>{
+      if(response.ok){
+        return response;
+      }else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage)
+        throw(error);
+      }
+    })
+    .then((response) => response.json())
+    .then((responseData) => {
+      this.setState({
+        methodPdfs: responseData,
+        selectedMethod:method_type
+      })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+    }
+
+
   render(){
+    let pdf_list =  this.state.methodPdfs.map(pdf=>{
+      return(
+        <PdfLinks
+        key={pdf.id}
+        id={pdf.id}
+        pdf_url={pdf.pdf_url}
+        title={pdf.title}
+        selectedMethod={this.state.selectedMethod}
+        />
+      )
+    })
     return(
       <div>
         <div className="row">
         </div>
-        <div>
-          <p>testing pdf download</p>
-          <a href="/methods/biological/animalFacts.pdf" download>Animal facts</a>
+        <div className="row">
+          <div className="small-6 columns">
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"biological")} className="method-headers method-headers-top">Biological Assays</h2>
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"programming")} className="method-headers">Programming</h2>
+            <h2 onClick={this.fetchMethodsPDF.bind(this,"philosophy")} className="method-headers">Philosophy</h2>
+          </div>
+          <div className="small-6 columns method-links-layer">
+            <h3>{this.state.selectedMethod}</h3>
+            <ol>{pdf_list}</ol>
+          </div>
         </div>
-        <ul className="method-layer">
-          <li className="method-headers method-headers-top">Biological Assays</li>
-            <ol className="method-document-header">
-              <li className="method-documents">document A</li>
-              <li className="method-documents">document B</li>
-              <li className="method-documents">document C</li>
-            </ol>
-          <li className="method-headers">Programming</li>
-            <ol className="method-document-header">
-              <li className="method-documents">document A</li>
-              <li className="method-documents">document B</li>
-              <li className="method-documents">document C</li>
-            </ol>
-          <li className="method-headers">Philosophy</li>
-            <ol className="method-document-header">
-              <li className="method-documents">document A</li>
-              <li className="method-documents">document B</li>
-              <li className="method-documents">document C</li>
-            </ol>
-        </ul>
       </div>
     )
   }

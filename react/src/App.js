@@ -5,6 +5,7 @@ import Research from './containers/Research'
 import Methods from './containers/Methods'
 import Layout from './containers/Layout'
 import Contacts from './containers/Contacts'
+import LabHistory from './containers/LabHistory'
 
 class App extends Component {
   constructor(props){
@@ -33,7 +34,7 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Research} />
             <Route exact path="/methods" component={Methods} />
-            <Route exact path="/history" component={Methods} />
+            <Route exact path="/history" component={LabHistory} />
             <Route exact path="/contacts" component={Contacts} />
           </div>
           </div>
