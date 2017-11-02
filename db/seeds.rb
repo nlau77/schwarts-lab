@@ -98,10 +98,12 @@ biological = Methodtype.create(method_type: "biological")
 programming = Methodtype.create(method_type: "programming")
 philosophy = Methodtype.create(method_type: "philosophy")
 
-Labmethod.create(title: "cheese", pdf_url: "animalFacts.pdf", methodtype: biological)
-Labmethod.create(title: "potato", pdf_url: "animalFacts.pdf", methodtype: biological)
 Labmethod.create(title: "ECGS Quantification", pdf_url: "ECGS_quantification.pdf", methodtype: biological)
 Labmethod.create(title: "Making ECGS", pdf_url: "Making ECGS.pdf", methodtype: biological)
+Labmethod.create(title: "FN Buffers", pdf_url: "FN Buffers.pdf", methodtype: biological)
+Labmethod.create(title: "FN purification", pdf_url: "FN purification.pdf", methodtype: biological)
+Labmethod.create(title: "Making competent cell stock", pdf_url: "competent_cell_stock.pdf", methodtype: biological)
+Labmethod.create(title: "SOB SOC and Inoue Prep", pdf_url: "sob-soc-inoue-prep.pdf", methodtype: biological)
 
 
 Labmethod.create(title: "program 1", pdf_url: "animalFacts.pdf", methodtype: programming)
