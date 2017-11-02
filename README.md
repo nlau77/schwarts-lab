@@ -2,7 +2,7 @@
 
 ## Overview
 
-Scwartz Lab is a informational website developed for Lab PI Martin Scwartz, who is a professor of Biomedical Engineering and Cell Biology at Yale.
+Scwartz Lab is a informational website developed for Lab PI Martin Schwartz, who is a professor of Biomedical Engineering and Cell Biology at Yale.
 
 
 ## Technologies
