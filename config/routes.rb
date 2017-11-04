@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :maintenance, only: [:index, :show]
   get '*path', to: 'static_pages#index'
 end
