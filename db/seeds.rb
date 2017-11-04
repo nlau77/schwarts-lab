@@ -11,6 +11,10 @@ Profile.destroy_all
 Pastmember.destroy_all
 Labmethod.destroy_all
 Methodtype.destroy_all
+User.destroy_all
+
+admin1= User.create(email: "user@test.com", admin: true, password: "123456")
+
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
                 link: "https://doi.org/10.1038/nature09198",
