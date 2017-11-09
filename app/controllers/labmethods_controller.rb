@@ -1,4 +1,4 @@
-class StaticPagesController < ApplicationController
+class LabmethodsController < ApplicationController
 
   def index
 
@@ -8,6 +8,7 @@ class StaticPagesController < ApplicationController
 
   end
   def create
+    # binding.pry
 
   end
 end
