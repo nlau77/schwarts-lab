@@ -4,6 +4,8 @@ class MaintenanceController < ApplicationController
     if !current_user.present?
       redirect_to root_path
     end
+    @labmethod = Labmethod.new
+    # binding.pry
   end
 
   def show
