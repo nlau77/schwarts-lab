@@ -5,6 +5,7 @@ class MaintenanceController < ApplicationController
       redirect_to root_path
     end
     @labmethod = Labmethod.new
+    @profile = Profile.new
     # binding.pry
   end
 
