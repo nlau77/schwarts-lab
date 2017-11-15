@@ -3,13 +3,12 @@
 
 <div class="rows">
   <div class="columns small-6 column-centered">
-
-  <%= form_for @labmethod, url: {controller: "labmethods", action: "create"} do |f| %>
+    <%= form_for @labmethod, url: {controller: "labmethods", action: "create"} do |f| %>
     <%= f.label :title %>
     <%= f.text_field :title %>
 
     <%= f.select :methodtype, ['biological', 'philosophy', 'programming']%>
-    
+
     <%= f.file_field :pdf_file %>
 
     <%= f.submit "Add new pdf" %>
