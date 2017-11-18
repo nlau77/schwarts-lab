@@ -25,6 +25,7 @@ class LabmethodsController < ApplicationController
       #create labmethod
       labmethod =Labmethod.new(title: title, pdf_url:pdf_file_name)
       labmethod.methodtype = selected_method
+
       labmethod.save
       redirect_to maintenance_index_path
   end
