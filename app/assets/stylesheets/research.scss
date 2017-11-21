@@ -6,6 +6,7 @@ $maroon_:#563444;
 
 .top-interest {
   margin-top: 10px;
+  //height:500px;
 }
 
 .bottom-interest {
@@ -19,18 +20,34 @@ $maroon_:#563444;
 //
 // }
 
+.small-6 {
+
+	position:relative;
+	//border: solid 2px black;
+	}
 
 span.interest-content {
-  padding-top: 30px;
+//  padding-top: 30px;
   background: rgba(0,0,0,0.5);
   color: white;
   // display: table;
-  height: 200px;
-  left: 15px;
-  position: absolute;
-  top: 37px;
-  width: 305px;
+
+  position:absolute;  
+  left: 0px;
+  margin:18px;
+  height: 84.5%;
   opacity: 0;
+  
+  
+}
+
+//fade in on hover
+span.interest-content:hover {
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	opacity: 1;
 }
 
 span.interest-content span {
@@ -38,6 +55,7 @@ span.interest-content span {
   text-align: center;
   vertical-align: middle;
   top: 0px;
+  
 }
 
 .interest-content2{
@@ -45,18 +63,22 @@ span.interest-content span {
   margin-top: 10px;
 
 }
-// img.hoverImages:hover {
-//   opacity: 0.5;
-// }
+ img.hoverImages:hover {
+   opacity: 0.5;
+ }
 
-.interest-content:hover {
-  opacity: 1;
+.hoverImages {
+	position:inherit;
+	margin:0px;
+	left:0px;
 }
 
 .topic-lists {
+width: inherit;
+height:100%;
   list-style-type: none;
   li {
-      font-size: 18px;
+      font-size: 24px;
   }
 }
 
@@ -73,7 +95,7 @@ span.interest-content span {
 }
 
 .interest-links {
-  margin-top: 20px;
+//  margin-top: 20px;
   li{
     font-size: 18px;
     margin-top: 15px;
@@ -83,3 +105,5 @@ span.interest-content span {
 .see-more-hover:hover{
   cursor: pointer
 }
+
+
