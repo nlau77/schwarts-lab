@@ -25,7 +25,7 @@ Interest.create(description: "Kumar, A., et al., Talin tension sensor measuremen
                 interest_type: 1)
 
 Interest.create(description: "Humphrey JD, et al., Mechanotransduction and extracellular matrix homeostasis. Nat Rev Mol Cell Biol., 2014. 15(12): p. 802-12.",
-                link: "https://dx.doi.org/10.1083%2Fjcb.201510012",
+                link: "https://doi.org/10.1038/nrm3896",
                 interest_type: 1)
 				
 Interest.create(description: "Ross, T.D., et al., Integrins in mechanotransduction. Curr. Opin. Cell Biol., 2013. 25(5): p. 613-618.",
