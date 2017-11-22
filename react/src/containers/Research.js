@@ -30,8 +30,13 @@ class Research extends Component {
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
+	
+	$('html,body').animate({
+		scrollTop: $(".top-interest").offset().top},
+	'slow');
+	
   }
-
+  
   render(){
     let interestsLinks = this.state.interests.map(interest =>{
 
@@ -44,7 +49,7 @@ class Research extends Component {
         <div className="row top-interest">
           <div className="small-6 columns">
             <h5 className="interest-content text-center">Mechanotransduction through Integrins</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
+            <img className="hoverImages" src={assetHelper["speckleFRET_crop.gif"]}></img>
             <span className="interest-content">
               <span className="interest-content2">
                 <ul className="topic-lists">
@@ -56,7 +61,7 @@ class Research extends Component {
           </div>
           <div className="small-6 columns right-interest">
             <h5 className="interest-content text-center">Endothelial cell shear stress sensing</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
+            <img className="hoverImages" src={assetHelper["endothelial_cells_crop.png"]}></img>
             <span className="interest-content"><span className="interest-content2">
               <ul className="topic-lists">
                 <li>Understanding how endothelial cells sense shear stress from blood flow and how these pathways contribute to vascular health and disease.</li>
@@ -70,7 +75,7 @@ class Research extends Component {
 		  
         </div>
         <div className="row interest-links">
-          <h5>{this.state.interest_topic}</h5>
+          <h5><b>{this.state.interest_topic}</b></h5>
           <ol>
             {interestsLinks}
           </ol>

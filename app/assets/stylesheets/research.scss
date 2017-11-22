@@ -3,10 +3,12 @@ $sky_blue: #1BB0CE;
 $grey_blue: #4F8699;
 $dull_maroon:#6A5E72;
 $maroon_:#563444;
+$gold: #eff464;
 
 .top-interest {
   margin-top: 10px;
   //height:500px;
+  
 }
 
 .bottom-interest {
@@ -31,13 +33,13 @@ span.interest-content {
   background: rgba(0,0,0,0.5);
   color: white;
   // display: table;
-
-  position:absolute;  
+  top:5%;
+  position:absolute; 
   left: 0px;
   margin:18px;
-  height: 84.5%;
+  //height: 84.5%;
+  height:90%;
   opacity: 0;
-  
   
 }
 
@@ -58,10 +60,14 @@ span.interest-content span {
   
 }
 
+h5.interest-content {
+  background-color:lighten($dull_gray,0%);
+}
+
 .interest-content2{
   padding-top: 10px;
   margin-top: 10px;
-
+  
 }
  img.hoverImages:hover {
    opacity: 0.5;
@@ -71,6 +77,8 @@ span.interest-content span {
 	position:inherit;
 	margin:0px;
 	left:0px;
+	height:100%;
+	width:100%;
 }
 
 .topic-lists {
@@ -92,14 +100,19 @@ height:100%;
 }
 
 .research-links-selected{
+
 }
 
 .interest-links {
-//  margin-top: 20px;
+    margin-top: 50px;
+	position:inherit;
+	width:72%;
+	
   li{
     font-size: 18px;
     margin-top: 15px;
   }
+  
 }
 
 .see-more-hover:hover{
