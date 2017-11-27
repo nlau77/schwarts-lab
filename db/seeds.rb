@@ -51,20 +51,53 @@ Interest.create(description: "Baeyens, N., et al., Vascular remodeling is govern
 Interest.create(description: "Conway, D.E., et al., Fluid shear stress on endothelial cells modulates mechanical tension across VE-cadherin and PECAM-1. Curr Biol, 2013. 23(11): p. 1024-30.",
                 link: "https://doi.org/10.1016/j.cub.2013.04.049",
                 interest_type: 2)
-	
+			
 
+Profile.create(name: "Sangeok Youn",
+               email: "Sangeok.Youn@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "sangeok.jpg")			   
+
+Profile.create(name: "Brian Coon",
+               email: "brian.coon@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "brian.jpg")
+			   
+Profile.create(name: "Keiichiro Tanaka",
+               email: "keiichiro.tanaka@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "brian.jpg")
+
+Profile.create(name: "Abhishek Kumar",
+               email: "keiichiro.tanaka@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "brian.jpg")			   
+			   
 Profile.create(name: "Tristan Driscoll",
-               email: "tristain@gmail.com",
+               email: "tristan.driscoll@yale.edu",
                description: "Dr. Driscoll is a Postdoctoral Fellow in Cardiovascular Medicine at Yale University. He obtained his undergraduate degree in Biomedical Engineering at the University of Minnesota (2009), where he worked as a laboratory technician under Dr. Kevin Wickman in the department of pharmacology. For his Ph.D. work, Dr. Driscoll moved to the University of Pennsylvania (2015), where he studied bioengineering under the direction of Dr. Robert Mauck. Dr. Driscollís initial work focused on the mechanics and biochemical content of engineered fibrocartilage. For his thesis work, he focused on mechanobiology of mesenchymal stem cells, studying structural components of the cytoskeleton and nucleuoskeleton that regulate the response of these cells to static and dynamic tensile stretch. Upon completion of his graduate work, Dr. Driscoll started his postdoctoral studies at the Yale Cardiovascular Research Center in January 2015 under the guidance of Dr. Martin Schwartz, where he is currently focused on the influence of substrate stiffness on the mechanics and dynamics of the cytoskeleton and its connections to integrin based adhesions.",
                img_url: "tristan.jpg")
 
-Profile.create(name: "Tristan",
-               email: "tristain2@gmail.com",
-               description: "Bullet-points above or next to this, or a similar, image;
-               Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries
-               Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers
-               Testing function of new mechanotransduction machinery In Vivo",
-               img_url: "tristan.jpg")
+Profile.create(name: "Elizabeth Min",
+               email: "gyongju.min@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "brian.jpg")
+			   
+Profile.create(name: "Charlene Jouy",
+               email: "charlene.jouy@postgrad.manchester.ac.uk",
+               description: "Charlene is a PhD student in Martin Schwartz Lab in the Wellcome Trust Center for Cell and Matrix research at the University of Manchester. She obtained a bioengineering degree at Polytech Nice Sophia-University of Nice Sopia Antipolis (France-2016), where she had various internships in neurobiology (LNBT-University of Angers - 2013) and cardiovascular labs (BNMI- University of Angers -2014; Yale cardiovascular research center – Yale University-2015). Under the supervision of Dr.Martin Schwartz she studied the impact of a metabolic modulation on endothelial cells mechanosensitivity to fluid shear stress. Charlene started her PhD program at the University of Manchester in September 2016 under the guidance of Dr. Martin Schwartz, where she is currently focused on the central role for strain direction in cardiac fibrosis and its consequences on cardiac fibroblasts fate and cardiac extracellular matrix.",               
+			   img_url: "charlene.png")
+			   
+Profile.create(name: "Rui Hui",
+               email: "rui.hui@yale.edu",
+               description: "Dr. Hu obtained his M.D. degree, major in clinical medicine, in Wuhan University (2014) and worked as a cardiovascular surgeon for 2 years, he subsequently started his postdoctoral training under the guidance of Dr. Martin Schwartz at Yale Cardiovascular Center, where he mainly focuses on abnormal mechanotransduction in aortic aneurysm and dissection initiating and progression.",               
+			   img_url: "brian.jpg")
+			   
+			   Profile.create(name: "Sang Joon Ahn",
+               email: "sangjoon.ahn@yale.edu",
+               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               img_url: "brian.jpg")
+
 
 # Profile.create(name: "Brian Coon",
 #                email: "Bcoon@gmail.com",
@@ -81,7 +114,7 @@ Profile.create(name: "Tristan",
 #                description: "test file 2",
 #                img_url: "brian.jpg")
 
-Pastmember.create(name: "Bob Ross", email: "bobross@gmail.com")
+Pastmember.create(name: "Nicolas Baeyens", email: "Nicolas.Baeyens@ulb.ac.be")
 Pastmember.create(name: "Alton Brown", email: "alton@gmail.com")
 
 

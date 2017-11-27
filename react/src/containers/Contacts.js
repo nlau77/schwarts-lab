@@ -57,9 +57,9 @@ class Contacts extends Component {
         <div className="row">
           <h3 className="contact-title">Principal Investigator</h3>
           <div className="columns small-4 small-offset-1">
-          <img className="" src={assetHelper["cat.jpg"]}></img>
+          <img className="PI-pic" src={assetHelper["schwartz_crop2.jpg"]}></img>
           </div>
-          <div className="columns small-6">
+          <div className="columns small-6 PI-info">
             <ul className="PI-info">
               <li><b>Martin Alexander Schwartz</b>, Robert W. Berliner Professor of Medicine (Cardiology) and Professor of Biomedical Engineering and of Cell Biology, Yale University</li>
               <hr />
