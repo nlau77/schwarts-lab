@@ -13,7 +13,7 @@ Labmethod.destroy_all
 Methodtype.destroy_all
 User.destroy_all
 
-admin1= User.create(email: "user@test.com", admin: true, password: "123456")
+admin1= User.create(email: "edit@test.com", admin: true, password: "123456")
 
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
@@ -60,7 +60,7 @@ Profile.create(name: "Sangeok Youn",
 
 Profile.create(name: "Brian Coon",
                email: "brian.coon@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               description: "Brian Coon is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
                img_url: "brian.jpg")
 			   
 Profile.create(name: "Keiichiro Tanaka",
@@ -72,16 +72,16 @@ Profile.create(name: "Abhishek Kumar",
                email: "keiichiro.tanaka@yale.edu",
                description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
                img_url: "brian.jpg")			   
-			   
-Profile.create(name: "Tristan Driscoll",
-               email: "tristan.driscoll@yale.edu",
-               description: "Dr. Driscoll is a Postdoctoral Fellow in Cardiovascular Medicine at Yale University. He obtained his undergraduate degree in Biomedical Engineering at the University of Minnesota (2009), where he worked as a laboratory technician under Dr. Kevin Wickman in the department of pharmacology. For his Ph.D. work, Dr. Driscoll moved to the University of Pennsylvania (2015), where he studied bioengineering under the direction of Dr. Robert Mauck. Dr. Driscollís initial work focused on the mechanics and biochemical content of engineered fibrocartilage. For his thesis work, he focused on mechanobiology of mesenchymal stem cells, studying structural components of the cytoskeleton and nucleuoskeleton that regulate the response of these cells to static and dynamic tensile stretch. Upon completion of his graduate work, Dr. Driscoll started his postdoctoral studies at the Yale Cardiovascular Research Center in January 2015 under the guidance of Dr. Martin Schwartz, where he is currently focused on the influence of substrate stiffness on the mechanics and dynamics of the cytoskeleton and its connections to integrin based adhesions.",
-               img_url: "tristan.jpg")
 
 Profile.create(name: "Elizabeth Min",
                email: "gyongju.min@yale.edu",
                description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
                img_url: "brian.jpg")
+			   
+Profile.create(name: "Tristan Driscoll",
+               email: "tristan.driscoll@yale.edu",
+               description: "Dr. Driscoll is a Postdoctoral Fellow in Cardiovascular Medicine at Yale University. He obtained his undergraduate degree in Biomedical Engineering at the University of Minnesota (2009), where he worked as a laboratory technician under Dr. Kevin Wickman in the department of pharmacology. For his Ph.D. work, Dr. Driscoll moved to the University of Pennsylvania (2015), where he studied bioengineering under the direction of Dr. Robert Mauck. Dr. Driscollís initial work focused on the mechanics and biochemical content of engineered fibrocartilage. For his thesis work, he focused on mechanobiology of mesenchymal stem cells, studying structural components of the cytoskeleton and nucleuoskeleton that regulate the response of these cells to static and dynamic tensile stretch. Upon completion of his graduate work, Dr. Driscoll started his postdoctoral studies at the Yale Cardiovascular Research Center in January 2015 under the guidance of Dr. Martin Schwartz, where he is currently focused on the influence of substrate stiffness on the mechanics and dynamics of the cytoskeleton and its connections to integrin based adhesions.",
+               img_url: "tristan.jpg")
 			   
 Profile.create(name: "Charlene Jouy",
                email: "charlene.jouy@postgrad.manchester.ac.uk",

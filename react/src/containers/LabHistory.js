@@ -46,7 +46,17 @@ class LabHistory extends Component {
 	  </div>
 	  <div className="small-4 columns historycol-right">
 		<div><img src={assetHelper["speckleFRET_crop.gif"]}></img></div>
-		<div>test2</div>
+		<div>Live imaging of NIH 3t3 cell spreading.</div>
+		<br />
+		<br />
+		<div><img src={assetHelper["orf2_crop.jpg"]}></img></div>
+		<br />
+		<div><img src={assetHelper["iki2_crop.jpg"]}></img></div>
+		<div>Integrin alpha5/alpha2 chimera knock-in mice (bottom) exhibiting less aortic atherosclerotic plaque compared to ApoE -/- mice (top).</div>
+		<br />
+		<br />
+		<div><img src={assetHelper["nfkb.jpg"]}></img></div>
+		<div>Schematic of Nfkb shear pathways studied in the Schwartz Lab.</div>		
 	  </div>
 	</div>
 		 
