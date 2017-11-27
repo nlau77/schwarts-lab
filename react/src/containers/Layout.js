@@ -13,7 +13,13 @@ class Layout extends Component {
 
   handleTabClick(id){
     this.setState({ selectedTab: id})
+	
+	$('html,body').animate({
+		scrollTop: $(".linksHeader").offset().top},
+	'slow');
+	
   }
+  
   render(){
 
     let tabTypes = [{label:"Research", link:'/', id:1},
@@ -51,7 +57,9 @@ class Layout extends Component {
           <div className="row">
           </div>
         </div>
+		<div id="headend"><hr /></div>
       </div>
+	  
     )
   }
 }

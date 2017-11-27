@@ -30,8 +30,13 @@ class Research extends Component {
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
+	
+	$('html,body').animate({
+		scrollTop: $(".top-interest").offset().top},
+	'slow');
+	
   }
-
+  
   render(){
     let interestsLinks = this.state.interests.map(interest =>{
 
@@ -42,53 +47,44 @@ class Research extends Component {
     return(
       <div>
         <div className="row top-interest">
-          <div className="small-4 columns">
-            <h5 className="interest-content1 text-center">Mechanotransduction</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
+          <div className="small-6 columns">
+            <h5 className="interest-content text-center">Mechanotransduction through Integrins</h5>
+            <img className="hoverImages" src={assetHelper["speckleFRET_crop.gif"]}></img>
             <span className="interest-content">
               <span className="interest-content2">
                 <ul className="topic-lists">
-                  <li>Classifying focal adhesions and their dynamics under varying mechanical strain and substrate stiffness.</li>
-                  <li className="see-more-hover" onClick={this.getInterestLinks.bind(this, "1", "Mechanotransduction")}><u>see more</u></li>
+                  <li>Understanding how cells sense applied strain and substrate stiffness through integrin-mediated adhesions.</li>
+                  <li className="see-more-hover" onClick={this.getInterestLinks.bind(this, "1", "Mechanotransduction Publications")}><u>recent publications</u></li>
                 </ul>
               </span>
             </span>
           </div>
-          <div className="small-4 columns right-interest">
-            <h5 className="interest-content1 text-center">Endothelial cell flow sensing</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
+          <div className="small-6 columns right-interest">
+            <h5 className="interest-content text-center">Endothelial cell shear stress sensing</h5>
+            <img className="hoverImages" src={assetHelper["endothelial_cells_crop.png"]}></img>
             <span className="interest-content"><span className="interest-content2">
               <ul className="topic-lists">
-                <li>Understanding the pathways and mechanisms by which endothelial cells sense blood flow.</li>
-                <li className="see-more-hover" onClick={this.getInterestLinks.bind(this, "2", "Endothelial cell flow sensing")}><u>see more</u></li>
+                <li>Understanding how endothelial cells sense shear stress from blood flow and how these pathways contribute to vascular health and disease.</li>
+                <li className="see-more-hover" onClick={this.getInterestLinks.bind(this, "2", "Shear Stress Publications")}><u>recent publications</u></li>
               </ul>
             </span></span>
           </div>
-          <div className="small-4 columns">
-            <h5 className="interest-content1 text-center">Vascular disease models</h5>
-            <img className="hoverImages" src={assetHelper["purple.jpg"]}></img>
-            <span className="interest-content">
-              <span className="interest-content2">
-                <ul className="topic-lists">
-                  <li>Investigating disturbed vascular homeostasis and its roles in inflammation, atherosclerosis, and matrix remodeling.</li>
-                  <li className="see-more-hover" onClick={this.getInterestLinks.bind(this, "3", "Vascular disease models")}><u>see more</u></li>
-                </ul>
-              </span>
-            </span>
-          </div>
+		  
+          
+		  
+		  
         </div>
         <div className="row interest-links">
-          <h5>{this.state.interest_topic}</h5>
+          <h5><b>{this.state.interest_topic}</b></h5>
           <ol>
             {interestsLinks}
           </ol>
         </div>
-        <div className="membrane-photo row">
-          <div className="columns small-12 small-centered">
-            <h3 className="text-center membrane-label">What do we want to study?</h3>
-            <img src={assetHelper["cell_membrane.png"]}></img>
-          </div>
-        </div>
+		
+		<div className="row interest-links2">
+			<ol></ol>
+		</div>
+
       </div>
     )
   }

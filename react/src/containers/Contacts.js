@@ -55,16 +55,17 @@ class Contacts extends Component {
     return (
       <div className="contacts-header">
         <div className="row">
-          <h3 className="contact-title">PI</h3>
+          <h3 className="contact-title">Principal Investigator</h3>
           <div className="columns small-4 small-offset-1">
-          <img className="" src={assetHelper["cat.jpg"]}></img>
+          <img className="PI-pic" src={assetHelper["schwartz_crop2.jpg"]}></img>
           </div>
-          <div className="columns small-6">
+          <div className="columns small-6 PI-info">
             <ul className="PI-info">
-              <li>Title: Yale PI </li>
-              <li>email: @</li>
-              <li>phone: 555-555-5555</li>
-              <li>address: Yale </li>
+              <li><b>Martin Alexander Schwartz</b>, Robert W. Berliner Professor of Medicine (Cardiology) and Professor of Biomedical Engineering and of Cell Biology, Yale University</li>
+              <hr />
+			  <li><u>email</u>: <a href="mailto:martin.schwartz@yale.edu">martin.schwartz@yale.edu</a></li>
+              <li><u>phone</u>: (203) 737-2930</li>
+              <li><u>address</u>: Yale Cardiovascular Research Center, 300 George Street Suite 759 New Haven, CT 06511</li>
             </ul>
           </div>
         </div>

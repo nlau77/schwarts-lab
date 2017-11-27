@@ -15,6 +15,13 @@ $yellow_green:#E4F5B1;
 .PI-info {
   font-size: 22px;
   list-style-type:none;
+  margin-left:-300px;
+}
+
+.PI-pic {
+	height:250px;
+	width:auto;
+	margin-left:-100px;
 }
 
 .contact-title{
@@ -30,8 +37,9 @@ $yellow_green:#E4F5B1;
 }
 
 .profile-picture{
-  height: 15vw;
+  //height: 15vw;
   width: auto;
+  height:200px;
   float: left;
   margin-right: 10px;
   clear:both;

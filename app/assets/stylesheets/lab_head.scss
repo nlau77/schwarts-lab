@@ -7,6 +7,8 @@ $grey_green:#7BB0A8;
 $lime_green:#A7DBAB;
 $yellow_green:#E4F5B1;
 
+$light_gray:#ced8e8;
+
 
 body{
   background: lighten($dull_gray, 5%);
@@ -31,61 +33,59 @@ body{
   font-size: 5rem;
 }
 
-
 .labels-header {
   margin-top: 10px;
 }
 
+//link layer
 .linkslayer{
+
+	margin-left: 5px;
+	margin-right: 5px;
+
   &:hover {
-    border-top: 1px solid darken($lime_green, 30%);
-    border-bottom: 1px solid darken($lime_green, 30%);
-    padding: 5px;
-    margin-left: 1px;
-    // color: lighten($lime_green, 50%);
-    background-color: lighten($dull_maroon, 20%);
-    color: darken($grey_green, 40%);
+
+	
+	background-color:$light_gray;
+	border-radius: 10px;
+	
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	opacity: 1;
   }
   &:active {
-    color: $dull_maroon;
+	color:$light_gray;
   }
 }
-// .labels-header p{
-//   // border: 1px solid black;
-//   // border-radius: 10px;
-//   // padding-left: 10px;
-//   // padding-right: 10px;
-//   &hover{
-//     background: green;
-//     border-top: 1px solid black;
-//     border-bottom: 1px solid black;
-//   }
-// }
 
 .linksHeader {
   margin-bottom: 10px;
+
 }
 .labLinks {
-  // margin-left: 150px;
-  // padding-left: 75px;
-  // padding-right: 75px;
+
   font-size: 2.5vw;
   text-align: center;
   color: darken($grey_green, 20%);
-  // &:hover {
-  //   // color: lighten($lime_green, 50%);
-  // }
 
-  // border-left: solid 1px black;
-  // border-right: solid 1px black
 }
 
 .selectedTab {
-  color: $sky_blue;
-  background: $yellow_green;
-  padding: 5px;
-  border-top: 1px solid darken($lime_green, 30%);
-  border-bottom: 1px solid darken($lime_green, 30%);
+  color: darken($sky_blue, 20%);
+  background: lighten($sky_blue, 30%);
+  //padding: 5px;
+  //border-top: 1px solid darken($lime_green, 30%);
+  //border-bottom: 1px solid darken($lime_green, 30%);
 
+  border-radius: 10px;
+  box-shadow: 0 0 4px 4px gray;
+  
 
 }
+
+#headend {
+	 box-shadow: 0 0 5px 1px black;
+}
+
