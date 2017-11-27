@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PdfLinks from '../components/PdfLinks'
+import SimpleMap from './SimpleMap'
 
 class Methods extends Component {
   constructor(props){
@@ -59,6 +60,9 @@ class Methods extends Component {
             <h3>{this.state.selectedMethod}</h3>
             <ol>{pdf_list}</ol>
           </div>
+        </div>
+        <div className="googleDivLayer2" >
+          <SimpleMap />
         </div>
       </div>
     )
