@@ -16,8 +16,9 @@ $gold: #eff464;
 }
 
 .historycol-right{
+	padding-top:10px;
 	//margin-left:50px;
-	background-color:lighten($gold,40%);
+	background-color:lighten($gold,20%);
 	border: dashed 2px black;
 	position:absolute;
 	
