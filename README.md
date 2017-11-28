@@ -13,6 +13,7 @@ The website is still under construction and the current version can be viewed at
   Notes: 
   1. Currently the cell imploding gif is not able to display properly on the heroku website.
   2. Pending Images and Information to fill out the tables and placeholder images
+  3. css/styling not showing correctly at the moment due to foundations import errors
 
 ## Features to be worked on
 
