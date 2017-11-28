@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import CityMapPin from '../components/CityMapPin'
 
-const AnyReactComponent = ({text, city, members }) =>
-    // let x = "hello world"
-    <div className="googleDivLayer2">
-      <span className="googleDivLayer3">{text}</span>
-      <br />
-      <div>
-        <span className="">{city}</span>
 
-      </div>
-    </div>;
+// const AnyReactComponent = ({text, city, members }) =>
+//     // let x = "hello world"
+//     <div className="googleDivLayer2">
+//       <span className="googleDivLayer3">{text}</span>
+//       <br />
+//       <div>
+//         <span className="">{city}</span>
+//
+//       </div>
+//     </div>;
 
 
 
@@ -37,24 +39,29 @@ class SimpleMap extends Component {
            defaultCenter={this.state.center}
            defaultZoom={this.state.zoom}
            >
-           <AnyReactComponent
+           <CityMapPin
              lat={37.0983}
              lng={240.66}
-             text={'WEST COAST'}
-             city={'city'}
-             members={['hello','world','bob']}
+             city={'Sandiego, CA'}
+             members={['hello','world','bob','1','2','3','4']}
+             lab = {'disco lab'}
            />
 
-           <AnyReactComponent
+           <CityMapPin
              lat={43.0983}
              lng={300.66}
-             text={'EAST COAST'}
+             city={'city'}
+             members={['hello','world','bob']}
+             lab = {'party lab'}
            />
 
-           <AnyReactComponent
+           <CityMapPin
              lat={42.3751000}
              lng={-71.1056100}
-             text={'Cambridge, MA'}
+             city={'Cambridge, MA'}
+             members={['hello','world','bob']}
+             lab = {'some lab'}
+
            />
 
            </GoogleMapReact>
