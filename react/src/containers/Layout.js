@@ -12,7 +12,6 @@ class Layout extends Component {
   }
 
   handleTabClick(id){
-    console.log(id)
     this.setState({ selectedTab: id})
 	
 	$('html,body').animate({
