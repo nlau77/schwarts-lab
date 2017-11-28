@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
 
   def new
     @profile = Profile.new
+    @profiles = Profile.all
   end
 
   def create
@@ -37,7 +38,9 @@ class ProfilesController < ApplicationController
   end
 
   def destroy
-
+    profile = Profile.find(params[:id])
+    profile.destroy
+    redirect_to new_profile_path
   end
 
   end
