@@ -20,21 +20,6 @@ class LabHistory extends Component {
   render(){
     return(
       <div>
-      <div className="googleDivLayer">
-        <GoogleMapReact
-        style={{width: "30%", height: "400px"}}
-        bootstrapURLKeys={GoogleMapConfig}
-        defaultCenter={this.state.center}
-        defaultZoom={this.state.zoom}
-        >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text={'Kreyser Avrora'}
-        />
-        </GoogleMapReact>
-      </div>
-
     	<div className="row top-interest">
           <div className="small-7 columns historycol">
             <h5><b>A brief synopsis...</b></h5>
@@ -85,6 +70,23 @@ class LabHistory extends Component {
     		<div>Schematic of Nfkb shear pathways studied in the Schwartz Lab.</div>
     	  </div>
     	</div>
+
+
+       <div style={{height: '1000px', width: '1000px'}}>
+          <GoogleMapReact
+          bootstrapURLKeys={GoogleMapConfig}
+          defaultCenter={this.state.center}
+          defaultZoom={this.state.zoom}
+          >
+
+          <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text={'Kreyser Avrora'}
+          />
+
+          </GoogleMapReact>
+      </div>
 
       </div>
 

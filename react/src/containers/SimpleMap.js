@@ -20,7 +20,7 @@ class SimpleMap extends Component {
     return (
       <div className="googleDivLayer2">
         <GoogleMapReact
-          style={{width: "30%", height: "400px"}}
+          style={{width: "10%", height: "400px"}}
           bootstrapURLKeys={GoogleMapConfig}
           defaultCenter={this.state.center}
           defaultZoom={this.state.zoom}
