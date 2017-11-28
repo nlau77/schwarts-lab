@@ -1,14 +1,23 @@
 .googleDivLayer{
-  width: 1000px;
-  length: 1000px;
-  background-color: lightblue;
+  width: 2000px;
+  height: 2000px;
+  margin-left: 150px;
+  margin-top: 50px;
+  // background-color: lightblue;
+}
+.googleDivLayer2{
+  font-size: 20px;
+  color: red;
+  background-color: display;
+  background-color: green;
+}
+.googleDivLayer3{
+  // font-size: 20px;
+  // color: red;
+  background-color: display;
+  background-color: green;
 }
 
-.googleDivLayer2{
-  width: 1000px;
-  length: 1000px;
-  background-color: lightblue;
-}
 
 .map {
     width: 1000px;
