@@ -29,4 +29,11 @@ class LabmethodsController < ApplicationController
       labmethod.save
       redirect_to maintenance_index_path
   end
+
+  def destroy
+
+    labmethod = Labmethod.find(params[:id])
+    labmethod.destroy
+    redirect_to maintenance_index_path
+  end
 end

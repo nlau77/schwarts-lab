@@ -6,6 +6,7 @@ class MaintenanceController < ApplicationController
     end
     @labmethod = Labmethod.new
     @profile = Profile.new
+    @labmethods = Labmethod.all
     # binding.pry
   end
 
