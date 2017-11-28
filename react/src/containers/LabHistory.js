@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react'
-
-const AnyReactComponent = ({ text }) => <div className="googleDivLayer2"><span className="googleDivLayer3">{text}</span></div>;
-
-const GoogleMapConfig = {
-  key: "AIzaSyBylVIdyNhsQtlYCmbgFTH2zZWZ0Wmj1u4"
-}
+import SimpleMap from './SimpleMap'
 
 class LabHistory extends Component {
   constructor(props){
@@ -16,30 +11,12 @@ class LabHistory extends Component {
       selectedMethod: ""
     }
   }
-  // center: {lat: 37.0902, lng: 95.7129},
-  // api key = AIzaSyA2YvXHnigta327TOB2ZrQxItTgqJBr1o8
+
   render(){
     return(
       <div>
-        <div className="googleDivLayer"style={{height: '500px', width: '900px'}}>
-           <GoogleMapReact
-           bootstrapURLKeys={GoogleMapConfig}
-           defaultCenter={this.state.center}
-           defaultZoom={this.state.zoom}
-           >
-           <AnyReactComponent
-             lat={37.0983}
-             lng={240.66}
-             text={'WEST COAST'}
-           />
-           <AnyReactComponent
-             lat={37.0983}
-             lng={280.66}
-             text={'EAST COAST'}
-           />
-
-           </GoogleMapReact>
-       </div>
+      
+        <SimpleMap />
 
       	<div className="row top-interest">
             <div className="small-7 columns historycol">

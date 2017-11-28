@@ -1,38 +1,54 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className="googleDivLayer2">
+                                          <span className="googleDivLayer3">{text}</span>
+                                        </div>;
 
 const GoogleMapConfig = {
   key: "AIzaSyBylVIdyNhsQtlYCmbgFTH2zZWZ0Wmj1u4"
 }
 
+
 class SimpleMap extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      center: {lat: 59.95, lng: 30.33},
-      zoom: 11
+        center: {lat: 37.09, lng: 260.71},
+        zoom: 4,
     }
   }
 
   render() {
     return (
-      <div className="googleDivLayer2">
-        <GoogleMapReact
-          style={{width: "10%", height: "400px"}}
-          bootstrapURLKeys={GoogleMapConfig}
-          defaultCenter={this.state.center}
-          defaultZoom={this.state.zoom}
-        >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text={'Kreyser Avrora'}
-          />
-        </GoogleMapReact>
-      </div>
-    );
+      <div>
+        <div className="googleDivLayer" style={{height: '500px', width: '900px'}}>
+           <GoogleMapReact
+           bootstrapURLKeys={GoogleMapConfig}
+           defaultCenter={this.state.center}
+           defaultZoom={this.state.zoom}
+           >
+           <AnyReactComponent
+             lat={37.0983}
+             lng={240.66}
+             text={'WEST COAST'}
+           />
+           <AnyReactComponent
+             lat={43.0983}
+             lng={300.66}
+             text={'EAST COAST'}
+           />
+
+           <AnyReactComponent
+             lat={42.3751000}
+             lng={-71.1056100}
+             text={'Cambridge, MA'}
+           />
+
+           </GoogleMapReact>
+         </div>
+       </div>
+    )
   }
 }
 
