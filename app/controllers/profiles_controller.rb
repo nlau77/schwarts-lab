@@ -36,4 +36,8 @@ class ProfilesController < ApplicationController
 
   end
 
+  def destroy
+
+  end
+
   end
