@@ -45,10 +45,10 @@ body{
 
   &:hover {
 
-	
+
 	background-color:$light_gray;
 	border-radius: 10px;
-	
+
 	-webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -81,7 +81,7 @@ body{
 
   border-radius: 10px;
   box-shadow: 0 0 4px 4px gray;
-  
+
 
 }
 
@@ -89,3 +89,10 @@ body{
 	 box-shadow: 0 0 5px 1px black;
 }
 
+.login{
+  margin-top: 50px;
+  border: solid black 1px;
+  padding: 15px 10px ;
+  border-radius: 10px;
+  box-shadow: -1px 1px 1px;
+}
