@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Newstuff from '../components/Newstuff'
 
 class Research extends Component {
   constructor(props){
@@ -6,11 +7,33 @@ class Research extends Component {
     this.state ={
       selectedLink:"research-links",
       interests: [],
+	  newstuffs: [],
       interest_topic: ""
     }
     this.getInterestLinks=this.getInterestLinks.bind(this)
   }
-
+	
+  componentDidMount(){
+	fetch(`/api/v1/newstuffs`)
+    .then(response =>{
+      if(response.ok){
+        return response;
+		
+      }else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage)
+        throw(error);
+      }
+    })
+    .then((response) => response.json())
+    .then((responseData) => {
+      this.setState({
+        newstuffs: responseData.newstuffs
+      })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`)); 
+  }
+	
   getInterestLinks(id, topic){
     fetch(`/api/v1/interests/${id}`)
     .then(response =>{
@@ -30,6 +53,7 @@ class Research extends Component {
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
+			
 	
 	$('html,body').animate({
 		scrollTop: $(".top-interest").offset().top},
@@ -44,8 +68,21 @@ class Research extends Component {
         <a href={interest.link}><li>{interest.description}</li></a>
       )
     })
+	
+	let newstuffs = this.state.newstuffs.map(newstuff => {
+      return (
+        <p>{newstuff.description}</p>
+      )
+	})
+  
     return(
       <div>
+		
+		<div className="row news">
+			<h3>What's new in the Schwartz Lab?</h3>
+			{newstuffs}
+		</div>
+	  
         <div className="row top-interest">
           <div className="small-6 columns">
             <h5 className="interest-content text-center">Mechanotransduction through Integrins</h5>

@@ -13,7 +13,11 @@ Labmethod.destroy_all
 Methodtype.destroy_all
 User.destroy_all
 
+Newstuff.destroy_all
+
 admin1= User.create(email: "edit@test.com", admin: true, password: "123456")
+
+Newstuff.create(description:"December 2017: The Schwartz Lab has a new website!")
 
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
