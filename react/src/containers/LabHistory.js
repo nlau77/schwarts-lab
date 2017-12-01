@@ -8,6 +8,7 @@ class LabHistory extends Component {
     this.state ={
       center: {lat: 37.09, lng: 260.71},
       zoom: 4,
+	  
       selectedMethod: ""
     }
   }
@@ -15,9 +16,9 @@ class LabHistory extends Component {
   render(){
     return(
       <div>
-      
+		
         <SimpleMap />
-
+		
       	<div className="row top-interest">
             <div className="small-7 columns historycol">
               <h5><b>A brief synopsis...</b></h5>

@@ -29,7 +29,7 @@ class Contacts extends Component {
         pastMembers: responseData.pastmembers
       })
     })
-    .catch(error => console.error(`Error in fetch: ${error.message}`));
+    .catch(error => console.error(`Error in fetch: ${error.message}`)); 
   }
 
   render(){
@@ -51,6 +51,9 @@ class Contacts extends Component {
         <p>{pastMember.name} : {pastMember.email}</p>
       )
     })
+	
+	
+
 
     return (
       <div className="contacts-header">

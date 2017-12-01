@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :interests, only: [:index, :show]
       resources :profiles, only: [:index]
+	  resources :newstuffs, only: [:index]
       resources :labmethods, only: [:index, :show]
     end
   end
@@ -14,5 +15,6 @@ Rails.application.routes.draw do
   resources :maintenance, only: [:index, :show]
   resources :labmethods, only: [:new, :create, :destroy]
   resources :profiles, only: [:new, :create, :edit, :update, :destroy]
+  resources :newstuffs, only: [:new, :create, :edit, :update, :destroy]
   get '*path', to: 'static_pages#index'
 end
