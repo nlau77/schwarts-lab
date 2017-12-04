@@ -28,9 +28,9 @@ class CityMapPin extends Component {
           <img className="pins" src={assetHelper["GooglePin.png"]}></img>
         </div>
 
-        <div id="layer2" className="cityTopComponent" style={{height: '100x', width: '150px', color: "#19A7C7"}}>
-          <h4>{this.props.city}</h4>
-          <h4>{this.props.lab}</h4>
+        <div id="layer2" className="cityTopComponent" style={{height: '200x', width: '350', color: "#19A7C7"}}>
+          <h5>{this.props.lab}</h5>
+		  <h6>{this.props.city}</h6>
           <ul>
             {members}
           </ul>

@@ -71,7 +71,7 @@ class Research extends Component {
 	
 	let newstuffs = this.state.newstuffs.map(newstuff => {
       return (
-        <p>{newstuff.description}</p>
+        <li>{newstuff.description}</li>
       )
 	})
   
@@ -79,8 +79,8 @@ class Research extends Component {
       <div>
 		
 		<div className="row news">
-			<h3>What's new in the Schwartz Lab?</h3>
-			{newstuffs}
+			<h3 className="news-header">What's new in the Schwartz Lab?</h3>
+			<ul className="news-bullet">{newstuffs}</ul>
 		</div>
 	  
         <div className="row top-interest">
