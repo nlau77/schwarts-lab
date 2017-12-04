@@ -52,9 +52,6 @@ class Contacts extends Component {
       )
     })
 	
-	
-
-
     return (
       <div className="contacts-header">
         <div className="row">
