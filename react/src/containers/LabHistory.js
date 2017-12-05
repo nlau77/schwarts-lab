@@ -62,7 +62,7 @@ class LabHistory extends Component {
       		<div><img src={assetHelper["orf2_crop.jpg"]}></img></div>
       		<br />
       		<div><img src={assetHelper["iki2_crop.jpg"]}></img></div>
-      		<div>Integrin alpha5/alpha2 chimera knock-in mice (bottom) exhibiting less aortic atherosclerotic plaque compared to ApoE -/- mice (top).</div>
+      		<div>Integrin alpha5/alpha2 chimera knock-in mice (bottom) exhibiting less aortic atherosclerotic plaque compared to ApoE -/- mice (top). From Yun et. al. (Nature Cell Biol., 2016)</div>
       		<br />
       		<br />
       		<div><img src={assetHelper["nfkb.jpg"]}></img></div>
