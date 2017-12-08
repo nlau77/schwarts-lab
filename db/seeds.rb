@@ -12,13 +12,11 @@ Pastmember.destroy_all
 Labmethod.destroy_all
 Methodtype.destroy_all
 User.destroy_all
-
 Newstuff.destroy_all
 
-admin1= User.create(email: "edit@test.com", admin: true, password: "123456")
+admin1= User.create(email: "edit@schwartz", admin: true, password: "ilovetalin")
 
 Newstuff.create(description:"December 2017: The Schwartz Lab has a new website!")
-
 
 Interest.create(description: "Grashoff, C., et al., Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics. Nature, 2010. 466(7303): p. 263-6.",
                 link: "https://doi.org/10.1038/nature09198",
@@ -59,28 +57,28 @@ Interest.create(description: "Conway, D.E., et al., Fluid shear stress on endoth
 
 Profile.create(name: "Sangeok Youn",
                email: "Sangeok.Youn@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               description: "Associate Research Scientist",
                img_url: "sangeok.jpg")			   
 
 Profile.create(name: "Brian Coon",
                email: "brian.coon@yale.edu",
-               description: "Brian Coon is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
+               description: "Brian Coon is a Research Scientist working on the following research topics: functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; testing function of new mechanotransduction machinery In Vivo",
                img_url: "brian.jpg")
 			   
 Profile.create(name: "Keiichiro Tanaka",
                email: "keiichiro.tanaka@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
-               img_url: "brian.jpg")
+               description: "Associate Research Scientist of Internal Medicine (Cardiology)",
+               img_url: "profile_stock.jpg")
 
 Profile.create(name: "Abhishek Kumar",
-               email: "keiichiro.tanaka@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
-               img_url: "brian.jpg")			   
+               email: "a.kumar@yale.edu",
+               description: "Postdoctoral Associate in Medicine (Cardiology)",
+               img_url: "profile_stock.jpg")			   
 
 Profile.create(name: "Elizabeth Min",
                email: "gyongju.min@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
-               img_url: "brian.jpg")
+               description: "Graduate Student in Cell Biology",
+               img_url: "profile_stock.jpg")
 			   
 Profile.create(name: "Tristan Driscoll",
                email: "tristan.driscoll@yale.edu",
@@ -95,47 +93,54 @@ Profile.create(name: "Charlene Jouy",
 Profile.create(name: "Rui Hui",
                email: "rui.hui@yale.edu",
                description: "Dr. Hu obtained his M.D. degree, major in clinical medicine, in Wuhan University (2014) and worked as a cardiovascular surgeon for 2 years, he subsequently started his postdoctoral training under the guidance of Dr. Martin Schwartz at Yale Cardiovascular Center, where he mainly focuses on abnormal mechanotransduction in aortic aneurysm and dissection initiating and progression.",               
-			   img_url: "brian.jpg")
+			   img_url: "profile_stock.jpg")
 			   
 			   Profile.create(name: "Sang Joon Ahn",
                email: "sangjoon.ahn@yale.edu",
-               description: "Brian Cool is a Research Scientist working on the following: Functional screens for endothelial shear stress pathways using CRISPR/Cas libraries; Biochemistry and cell biology studies to identify mechanosensors and mechanotransducers; Testing function of new mechanotransduction machinery In Vivo",
-               img_url: "brian.jpg")
+               description: "Postdoctoral Associate in Medicine (Cardiology)",
+               img_url: "profile_stock.jpg")
 
-
-# Profile.create(name: "Brian Coon",
-#                email: "Bcoon@gmail.com",
-#                description: "asdfasdfas",
-#                img_url: "brian.jpg")
-#
-#  Profile.create(name: "Tristan",
-#                 email: "tristain2@gmail.com",
-#                 description: "test file 2",
-#                 img_url: "tristan.jpg")
-#
-# Profile.create(name: "Tristan",
-#                email: "tristain2@gmail.com",
-#                description: "test file 2",
-#                img_url: "brian.jpg")
-
-Pastmember.create(name: "Nicolas Baeyens", email: "Nicolas.Baeyens@ulb.ac.be")
-Pastmember.create(name: "Alton Brown", email: "alton@gmail.com")
+			   
+Pastmember.create(name: "William B. Kiosses", email: "Director of microscopy, Scripps Research Institute")
+Pastmember.create(name: "Miguel Ángel Del Pozo,", email: "Professor, CNIC Madrid")
+Pastmember.create(name: "Anthony Wayne Orr", email: "Professor, LSU")
+Pastmember.create(name: "Xiangdong Ren", email: "University of Pennsylvania")
+Pastmember.create(name: "Jean Mc Arthur Lewis", email: "UCSD")
+Pastmember.create(name: "Eleni Tzima", email: "Professor, Oxford University")
+Pastmember.create(name: "Mark W. Renshaw", email: "Industry")
+Pastmember.create(name: "Nicolas Baeyens", email: "Professor, Free University of Brussels")
+Pastmember.create(name: "Daniel E. Conway", email: "Assistant Professor, VCU")
+Pastmember.create(name: "Brenton D. Hoffman", email: "Assistant Professor, Duke")
+Pastmember.create(name: "Nahum Meller", email: "Industry")
+Pastmember.create(name: "Jere E. Meredith", email: " Bristol Myers Squibb")
+Pastmember.create(name: "Konstadinos Moissoglu", email: "NCI")
+Pastmember.create(name: "Rebecca A. Stockton", email: "Professor, UCLA")
+Pastmember.create(name: "Nagaraj Balasubramanian", email: "Associate Professor, Pune India")
+Pastmember.create(name: "Krishna A. Jhaveri", email: "Industry")
+Pastmember.create(name: "Madhusudhan Budatha", email: "Researcher, UT Southwestern")
+Pastmember.create(name: "Carsten Grashoff", email: "Associate Professor, University of Munster")
+Pastmember.create(name: "Akira Katsumi", email: "Professor, Japan")
+Pastmember.create(name: "Andrés Norambuena", email: "Researcher, UVA")
+Pastmember.create(name: "Leo S. Price", email: "Industry, Holland")
+Pastmember.create(name: "Chong Wang", email: "Assistant Professor, Central College, Iowa")
+Pastmember.create(name: "Kumari L. Andarawewa", email: "Researcher, UVA")
+Pastmember.create(name: "Véronique T. Baron", email: "Salk")
+Pastmember.create(name: "Mingxing Ouyang", email: "Researcher, China")
+Pastmember.create(name: "John V. Frangioni", email: "Professor, Harvard")
+Pastmember.create(name: "Julia K. Meller", email: "Postdoc, Cleveland Clinic")
+Pastmember.create(name: "M. Patricia Tranter", email: "Education (Principal), Taunton, MA")
+Pastmember.create(name: "Cornelia Hahn", email: "")
 
 
 biological = Methodtype.create(method_type: "biological")
 programming = Methodtype.create(method_type: "programming")
 philosophy = Methodtype.create(method_type: "philosophy")
 
-Labmethod.create(title: "ECGS Quantification", pdf_url: "ECGS_quantification.pdf", methodtype: biological)
 Labmethod.create(title: "Making ECGS", pdf_url: "Making ECGS.pdf", methodtype: biological)
-Labmethod.create(title: "FN Buffers", pdf_url: "FN Buffers.pdf", methodtype: biological)
-Labmethod.create(title: "FN purification", pdf_url: "FN purification.pdf", methodtype: biological)
-Labmethod.create(title: "Making competent cell stock", pdf_url: "competent_cell_stock.pdf", methodtype: biological)
-Labmethod.create(title: "SOB SOC and Inoue Prep", pdf_url: "sob-soc-inoue-prep.pdf", methodtype: biological)
-
+Labmethod.create(title: "Fibronectin Purification", pdf_url: "Fibronectin Purification.pdf", methodtype: biological)
+Labmethod.create(title: "Making competent cell stock", pdf_url: "Making Competent Cells.pdf", methodtype: biological)
 
 Labmethod.create(title: "program 1", pdf_url: "animalFacts.pdf", methodtype: programming)
-Labmethod.create(title: "program 2", pdf_url: "animalFacts.pdf", methodtype: programming)
 
-Labmethod.create(title: "philo 1", pdf_url: "animalFacts.pdf", methodtype: philosophy)
-Labmethod.create(title: "philo 2", pdf_url: "animalFacts.pdf", methodtype: philosophy)
+Labmethod.create(title: "The Importance of Stupidity in Scientific Research", pdf_url: "importance of stupidity.pdf", methodtype: philosophy)
+Labmethod.create(title: "The Importance of Indifference in Scientific Research", pdf_url: "importance of indifference.pdf", methodtype: philosophy)
